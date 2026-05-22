@@ -48,7 +48,7 @@ const stats = [
 
 export default function ImpactSection() {
   return (
-    <section className="py-32 relative overflow-hidden bg-ivory">
+    <section className="py-20 md:py-32 relative overflow-hidden bg-ivory">
       {/* Background elements */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-eco-green/5 rounded-full blur-[120px] pointer-events-none" />
       
@@ -58,9 +58,9 @@ export default function ImpactSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-20"
+          className="text-center mb-12 md:mb-20"
         >
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mb-4">
             Our Environmental <span className="text-eco-green">Impact</span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">

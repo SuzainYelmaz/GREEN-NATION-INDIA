@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import SmoothScrollProvider from "@/components/layout/SmoothScrollProvider";
-import FloatingNavbar from "@/components/layout/FloatingNavbar";
+import NgoHeader from "@/components/layout/NgoHeader";
 import PremiumFooter from "@/components/layout/PremiumFooter";
 
 const inter = Inter({
@@ -24,11 +24,11 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} antialiased`}>
       <body className="min-h-screen flex flex-col antialiased selection:bg-eco-green/30 selection:text-eco-green-dark">
         <SmoothScrollProvider>
-          <div className="flex-1">
+          <NgoHeader />
+          <div className="flex-1 pt-24">
             {children}
           </div>
           <PremiumFooter />
-          <FloatingNavbar />
         </SmoothScrollProvider>
       </body>
     </html>

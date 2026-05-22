@@ -37,10 +37,10 @@ const campaigns = [
 
 export default function CampaignsPreview() {
   return (
-    <section className="py-32 relative bg-ivory">
+    <section className="py-20 md:py-32 relative bg-ivory">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 md:mb-16 gap-6">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -48,7 +48,7 @@ export default function CampaignsPreview() {
             transition={{ duration: 0.6 }}
             className="max-w-2xl"
           >
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mb-4">
               Featured Campaigns
             </h2>
             <p className="text-gray-600 text-lg">

@@ -17,10 +17,10 @@ export default function AboutSection() {
   const scale = useTransform(scrollYProgress, [0, 0.5, 1], [0.8, 1, 1.1]);
 
   return (
-    <section ref={containerRef} id="about" className="py-32 relative overflow-hidden bg-mint/20">
+    <section ref={containerRef} id="about" className="py-20 md:py-32 relative overflow-hidden bg-mint/20">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-center">
           
           {/* Text Content */}
           <div className="space-y-10">
@@ -30,11 +30,11 @@ export default function AboutSection() {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.8 }}
             >
-              <div className="relative w-24 h-24 md:w-32 md:h-32 mb-8">
+              <div className="relative w-16 h-16 md:w-32 md:h-32 mb-6 md:mb-8">
                 <Image src="/images/GN CUT LOGO 2025 Square.png" alt="GNI Square Logo" fill className="object-contain" unoptimized />
               </div>
               <h2 className="text-sm uppercase tracking-[0.2em] text-eco-green font-semibold mb-4">Our Story</h2>
-              <h3 className="text-5xl md:text-6xl font-bold tracking-tighter text-gray-900 leading-[1.1]">
+              <h3 className="text-4xl md:text-6xl font-bold tracking-tighter text-gray-900 leading-[1.1]">
                 Rooted in <br/>
                 <span className="text-eco-green-dark">Nature&apos;s Wisdom.</span>
               </h3>
@@ -76,7 +76,7 @@ export default function AboutSection() {
           </div>
 
           {/* Visual Content / Images */}
-          <div className="relative h-[600px] lg:h-[800px] w-full hidden md:block">
+          <div className="relative h-[400px] md:h-[600px] lg:h-[800px] w-full hidden sm:block">
             {/* Primary large image */}
             <motion.div 
               style={{ y: y1 }}

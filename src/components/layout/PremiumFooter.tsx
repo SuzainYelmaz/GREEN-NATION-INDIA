@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function PremiumFooter() {
   return (
-    <footer className="relative mt-32 pt-20 pb-32 md:pb-20 overflow-hidden bg-mint/30">
+    <footer className="relative mt-20 md:mt-32 pt-16 md:pt-20 pb-20 overflow-hidden bg-mint/30">
       {/* Decorative top border */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-eco-green/20 to-transparent" />
       
@@ -90,7 +90,7 @@ export default function PremiumFooter() {
 
         </div>
 
-        <div className="mt-20 pt-8 border-t border-eco-green/10 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="mt-12 md:mt-20 pt-8 border-t border-eco-green/10 flex flex-col md:flex-row justify-between items-center gap-4 text-center">
           <p className="text-xs text-gray-500">
             © {new Date().getFullYear()} Green Nation India. All rights reserved.
           </p>

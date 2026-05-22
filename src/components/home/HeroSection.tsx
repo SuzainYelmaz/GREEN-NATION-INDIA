@@ -10,7 +10,7 @@ import { ArrowRight, Leaf, HeartHandshake } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[100svh] w-full flex items-center justify-center overflow-hidden py-20 md:py-32">
       {/* 3D Background */}
       <div className="absolute inset-0 z-0">
         <Canvas camera={{ position: [0, 0, 8], fov: 45 }}>
@@ -30,7 +30,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="relative w-[250px] h-[250px] md:w-[350px] md:h-[350px] mb-8"
+          className="relative w-[180px] h-[180px] md:w-[350px] md:h-[350px] mb-8"
         >
           <Image 
             src="/images/GN CUT ROUND Logo 2025.png"
@@ -56,7 +56,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
-          className="text-6xl md:text-8xl font-bold tracking-tighter text-gray-900 mb-6 drop-shadow-sm"
+          className="text-4xl sm:text-5xl md:text-8xl font-bold tracking-tighter text-gray-900 mb-6 drop-shadow-sm"
         >
           Working to protect
           <br />
@@ -69,7 +69,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
-          className="text-lg md:text-2xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed"
+          className="text-base md:text-2xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed"
         >
           Join a movement creating a greener, cleaner, and sustainable future. Let&apos;s protect our environment together.
         </motion.p>

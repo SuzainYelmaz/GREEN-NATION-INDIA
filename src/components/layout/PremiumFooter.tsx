@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Globe, Mail, MessageSquare, Phone, ArrowRight } from "lucide-react";
+import { Globe, Mail, MessageSquare, Phone, ArrowRight, Leaf } from "lucide-react";
 import Image from "next/image";
 
 export default function PremiumFooter() {
@@ -26,7 +26,7 @@ export default function PremiumFooter() {
               <span className="text-2xl font-bold tracking-tight text-gray-900">Green Nation</span>
             </div>
             <p className="text-gray-500 leading-relaxed text-sm mb-4">
-              Rebuilding India, one tree at a time. We are a passionate movement dedicated to environmental sustainability, climate action, and creating a greener future for generations to come.
+              Working to protect The Green Planet. We are a passionate movement dedicated to environmental sustainability, climate action, and creating a greener future for generations to come.
             </p>
             <p className="text-gray-900 font-semibold mb-6">
               Founded in 2004 by MD TARIQ NAKAASH

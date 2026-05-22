@@ -11,7 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Green Nation India | Rebuilding India, One Tree at a Time",
+  title: "Green Nation India | Working to protect The Green Planet",
   description: "Join a movement creating a greener, cleaner, and sustainable future across India.",
 };
 

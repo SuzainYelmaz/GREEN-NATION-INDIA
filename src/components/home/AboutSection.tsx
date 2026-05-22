@@ -30,6 +30,9 @@ export default function AboutSection() {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.8 }}
             >
+              <div className="relative w-24 h-24 md:w-32 md:h-32 mb-8">
+                <Image src="/images/GN CUT LOGO 2025 Square.png" alt="GNI Square Logo" fill className="object-contain" unoptimized />
+              </div>
               <h2 className="text-sm uppercase tracking-[0.2em] text-eco-green font-semibold mb-4">Our Story</h2>
               <h3 className="text-5xl md:text-6xl font-bold tracking-tighter text-gray-900 leading-[1.1]">
                 Rooted in <br/>

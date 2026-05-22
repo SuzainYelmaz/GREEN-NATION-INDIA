@@ -1,5 +1,7 @@
 "use client";
 
+import { Canvas } from "@react-three/fiber";
+import { Environment } from "@react-three/drei";
 import FloatingParticles from "@/components/3d/FloatingParticles";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -22,12 +24,13 @@ export default function HeroSection() {
       {/* Soft glassmorphism overlay */}
       <div className="absolute inset-0 z-0 bg-gradient-to-b from-mint/40 via-transparent to-ivory/80 pointer-events-none" />
 
-      {/* Floating Round Logo */}
-      <div className="absolute inset-0 z-0 flex items-center justify-center opacity-20 pointer-events-none mix-blend-multiply">
+      {/* Content */}
+      <div className="relative z-10 flex flex-col items-center text-center px-6 max-w-5xl mx-auto mt-12">
         <motion.div
-          animate={{ y: [0, -20, 0], rotate: [0, 5, -5, 0] }}
-          transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-          className="relative w-[500px] h-[500px] md:w-[700px] md:h-[700px]"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="relative w-[250px] h-[250px] md:w-[350px] md:h-[350px] mb-8"
         >
           <Image 
             src="/images/GN CUT ROUND Logo 2025.png"
@@ -38,10 +41,7 @@ export default function HeroSection() {
             unoptimized
           />
         </motion.div>
-      </div>
 
-      {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto mt-20">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -58,10 +58,10 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
           className="text-6xl md:text-8xl font-bold tracking-tighter text-gray-900 mb-6 drop-shadow-sm"
         >
-          Rebuilding India,
+          Working to protect
           <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-eco-green to-eco-green-dark">
-            One Tree at a Time.
+            The Green Planet.
           </span>
         </motion.h1>
 
